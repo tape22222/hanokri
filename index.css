@@ -1,0 +1,500 @@
+body {
+    margin: 0px;
+    font-family: 'Noto Sans KR';
+}
+
+div {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 28px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 24px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 18px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+p {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    margin: 0px;
+}
+
+/* nav */
+
+.nav-background {
+    width: 100%;
+    height: 600px;
+}
+
+.nav-background img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.navbar {
+    width: 1280px;
+    height: 70px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* 더보기 아이콘 */
+
+.list-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+    cursor: pointer;
+}
+
+/* 목차 리스트 */
+
+.main-menu {
+    padding-left: 25px;
+    padding-top: 23px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.menu {
+    width: 80px;
+    margin-left: 25px;
+    float: left;
+    text-align: center;
+}
+
+.sub-menu {
+    margin-top: 3px;
+    padding: 0px;
+    background-color: #ffffff4d;
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+.sub-menu li {
+    padding: 4px 0px 5px;
+    border-bottom: 1px solid #1f273d66;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: black;
+}
+
+.menu p {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+/* 상단 nav 로고 */
+
+.main-logo {
+    width: 64px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+}
+
+/* 2구역 한옥 더보기 */
+
+.info {
+    width: 1280px;
+    margin: auto;
+    position: relative;
+}
+
+.info-left-box {
+    width: 490px;
+    height: 120px;
+    margin-left: 730px;
+    display: inline-block;
+    position: absolute;
+    top: -60px;
+    background-color: #ffffff;
+}
+
+.info-left-box h4 {
+    margin-left: 40px;
+    margin-top: 27px;
+}
+
+.info-left-box p {
+    margin-left: 40px;
+    margin-top: 24px;
+    font-size: 14px;
+}
+
+.info-right-box {
+    width: 60px;
+    height: 60px;
+    margin-left: 1220px;
+    display: inline-block;
+    position: absolute;
+    top: -60px;
+    background-color: #1F273D;
+    cursor: pointer;
+}
+
+/* 2구역 홈페이지 소개*/
+
+.page-info {
+    width: 1280px;
+    height: 200px;
+    margin: auto;
+    margin-top: 70px;
+    position: relative;
+}
+
+.info-left-text {
+    width: 700px;
+    position: absolute;
+}
+
+.info-left-text h2 {
+    width: 90px;
+    display: inline-block;
+}
+
+.text0 {
+    font-size: 21px;
+    color: #505050;
+    display: inline-block;
+    text-align: center;
+}
+
+.text1 {
+    margin-top: 20px;
+}
+
+.info-right-img {
+    width: 530px;
+    height: 130px;
+    display: inline-block;
+    position: absolute;
+    top: 70px;
+    left: 740px;
+}
+
+/* 한옥마을 캐러셀 */
+
+.text2 {
+    margin-top: 130px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.carousel {
+    width: 1280px;
+    height: 610px;
+    margin: auto;
+    position: relative;
+}
+
+.button-icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 250px;
+    left: 30px;
+    cursor: pointer;
+}
+
+.button-icon:last-child {
+    left: 1220px;
+}
+
+.slider {
+    width: 1060px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide-container {
+    width: 3180px;
+    height: 500px;
+    transition: all 1s;
+}
+
+.slide-image {
+    width: 1060px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    float: left;
+}
+
+.slide-text-box {
+    width: 700px;
+    height: 141px;
+    position: absolute;
+    top: 470px;
+    left: 290px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 10px #00000014;
+    opacity: 0;
+}
+
+.slide-text-box-background {
+    width: 700px;
+    height: 141px;
+    position: absolute;
+    top: 470px;
+    left: 290px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 10px #00000014;
+}
+
+.text3 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.text4 {
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    color: #505050;
+    text-align: center;
+}
+
+.more-button {
+    width: 70px;
+    height: 17px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+    cursor: pointer;
+}
+
+.more-button p {
+    font-size: 9px;
+    font-weight: 200;
+    letter-spacing: -0.3px;
+    color: #C4C4C4;
+    text-align: center;
+}
+
+/* 띠배너 */
+
+.banner-background {
+    background-color: #C0B3A0;
+    width: 100%;
+    height: 120px;
+    margin-top: 120px;
+}
+
+.text5 {
+    padding-top: 25px;
+    font-size: 21px;
+    font-weight: 500;
+    color: #2D2D2D;
+    text-align: center;
+}
+
+.text6 {
+    margin-top: 10px;
+    font-size: 17px;
+    color: #313131;
+    text-align: center;
+}
+
+/* 체험 활동 스크롤 */
+
+.scroll-title {
+    width: 1280px;
+    margin: auto;
+    position: sticky;
+    top: 50px;
+    z-index: -1;
+}
+
+.text7 {
+    margin-top: 5px;
+    font-size: 18px;
+    letter-spacing: -0.3px;
+    color: #505050;
+}
+
+.scroll-background {
+    width: 1280px;
+    height: 2680px;
+    margin: auto;
+    position: relative;
+}
+
+.card {
+    width: 360px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 20px #00000040;
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+}
+
+.card-image {
+    width: 100%;
+    height: 350px;
+    background-color: #b6b6b6;
+}
+
+.card-title {
+    margin-top: 26px;
+    margin-left: 23px;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.card-text {
+    margin-top: 8px;
+    margin-left: 23px;
+    color: #505050;
+}
+
+#card1 {
+    top: -5px;
+    left: 720px;
+}
+
+#card2 {
+    top: 245px;
+    left: 200px;
+}
+
+#card3 {
+    top: 615px;
+    left: 720px;
+}
+
+#card4 {
+    top: 865px;
+    left: 200px;
+}
+
+#card5 {
+    top: 1235px;
+    left: 720px;
+}
+
+.background-text {
+    position: sticky;
+    top: 20px;
+    z-index: -1;
+}
+
+.background-text span {
+    font: italic bold 12px/30px Georgia, serif;
+    font-size: 190px;
+    color: #8E7764;
+    position: absolute;
+    top: 350px;
+    left: 90px;
+    z-index: -1;
+}
+
+/* 하단 */
+
+footer {
+    border-top: 1px solid #D8D8D8;
+}
+
+.footer {
+    width: 1280px;
+    margin: auto;
+}
+
+.footer h5 {
+    margin-top: 28px;
+}
+
+.footer h5:first-child {
+    margin-top: 50px;
+}
+
+.footer-main {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-menu {
+    margin-top: 4px;
+    padding: 0 16px;
+    float: left;
+    border-left: 1px solid #D8D8D8;
+    font-size: 13px;
+    color: #505050;
+}
+
+.footer-main .footer-menu:first-child {
+    padding-left: 0px;
+    border-left: none;
+}
+
+.capyright {
+    margin-top: 45px;
+    margin-bottom: 25px;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    color: #505050;
+}
+
+/* event */
+
+.menu:hover > .sub-menu {
+    opacity: 1;
+}
+
+.opacity15s {
+    opacity: 1;
+    transition: all 1.5s;
+}
+
+.opacity1s {
+    opacity: 1;
+    transition: all 1s;
+}

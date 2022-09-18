@@ -1,0 +1,866 @@
+body {
+    margin: 0px;
+    font-family: 'Noto Sans KR';
+}
+
+div {
+    box-sizing: border-box;
+}
+
+ul, li {
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 28px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 26px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 18px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+p {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    margin: 0px;
+}
+
+/* 상단 */
+
+.top-background {
+    width: 100%;
+    height: 1240px;
+    background-image: url(img/jeonju/j_main_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* nav */
+
+.navbar {
+    width: 1280px;
+    height: 70px;
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* 더보기 */
+
+.list-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+}
+
+/* 목차 리스트 */
+
+.main-menu {
+    padding-left: 25px;
+    padding-top: 23px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.menu {
+    width: 75px;
+    margin-left: 25px;
+    float: left;
+    text-align: center;
+}
+
+.sub-menu {
+    padding: 0px;
+}
+
+.menu p {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+.sub-menu a {
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: black;
+    display: none;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+/* 상단 nav 로고 */
+
+.main-logo {
+    width: 64px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 상단 메인 */
+
+.main-background {
+    width: 1280px;
+    height: 1100px;
+    margin: auto;
+}
+
+.main-title {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.main-subtitle {
+    margin-top: 3px;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.main-card-motion {
+    margin-top: 20px;
+    height: 985px;
+}
+
+.main-card {
+    width: 240px;
+    height: 985px;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    clip-path: inset(645px 0px 0px round 20px);
+    transition: all 2s;
+}
+
+.main-card:hover {
+    clip-path: inset(0px 0px 645px round 20px);
+}
+    /*clip-path: inset(0px 0px 645px round 20px);*/
+    /* https://ishadeed.com/article/clip-path/
+    height: 340px;
+    margin-top: 645px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.top {
+    width: 240px;
+    height: 645px;
+    background-color: #FFEEEA;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.bottom {
+    width: 240px;
+    height: 0px;
+    background-color: #FFEEEA;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}*/
+
+.main-card:first-child {
+    margin-left: 0px;
+}
+
+/* 1. 연혁 */
+
+.j1-background {
+    width: 1280px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.j1-title {
+    text-align: center;
+}
+
+.j1-yearlist {
+    margin-top: 30px;
+}
+
+.j1-yearlist-title {
+    margin-left: 180px;
+    float: left;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    color: #C8C8C8;
+    cursor: pointer;
+}
+
+.j1-yearlist-title:first-child {
+    margin-left: 130px;
+}
+
+.j1-yearlist-item {
+    width: 1280px;
+    height: 344px;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: #00000008;
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+
+.j1- {
+    width: 2560px;
+    height: 226px;
+}
+
+.j1-yearlist-line {
+    margin-top: 70px;
+    margin-bottom: 5px;
+    margin-left: 260px;
+    position: relative;
+}
+
+.j1-year-dot {
+    width: 10px;
+    height: 10px;
+    margin-left: 365px;
+    border-radius: 100%;
+    background-color: #1F273D;
+    float: left;
+}
+
+.j1-year-dot:first-child {
+    margin-left: 0px;
+}
+
+.j1-year-dot:nth-child(4) {
+    margin-left: 520px;
+}
+
+.j1-year-line {
+    width: 760px;
+    border-top: 1px solid #C8C8C8;
+    z-index: -1;
+    position: absolute;
+    top: 4px;
+}
+
+.j1-year-line-long {
+    width: 1665px;
+    border-top: 1px solid #C8C8C8;
+    z-index: -1;
+    position: absolute;
+    top: 4px;
+}
+
+.j1-year-line-middle{
+    width: 1290px;
+    border-top: 1px solid #C8C8C8;
+    z-index: -1;
+    position: absolute;
+    top: 4px;}
+
+.j1-list {
+    width: 300px;
+    margin-top: 5px;
+    margin-left: 75px;
+    float: left;
+}
+
+.j1-list:first-child {
+    margin-left: 115px;
+}
+
+.j1-list:nth-child(4) {
+    margin-left: 230px;
+}
+
+.j1-list p {
+    font-size: 21px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #000000;
+}
+
+.j1-sublist {
+    margin-top: 30px;
+    position: relative;
+}
+
+.j1-sublist p {
+    margin-left: 9px;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: #4D4D4D;
+}
+
+.j1-list-style {
+    width: 4px;
+    height: 4px;
+    margin-top: 8px;
+    border-radius: 100%;
+    background-color: #000000;
+    position: absolute;
+}
+
+.j1-listnum {
+    width: 300px;
+    height: 4px;
+    background-color: #C8C8C8;
+    position: absolute;
+    left: 490px;
+    bottom: 45px;
+    cursor: pointer;
+}
+
+.j1-listnum-full {
+    width: 100%;
+    height: 4px;
+    background-color: #1F273D;
+}
+
+.j1-listnum-half {
+    width: 50%;
+    height: 4px;
+    background-color: #1F273D;
+    position: absolute;
+    transition: all 0.7s;
+}
+
+/* 2. 관광안내 */
+
+.j2-background {
+    width: 1280px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.j2-subtitle {
+    margin-top: 17px;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+    float: left;
+}
+
+.j2-morebutton {
+    width: 80px;
+    height: 19px;
+    margin-top: 22px;
+    margin-left: 13px;
+    padding-top: 1px;
+    border-radius: 15px;
+    border: 1px solid #C4C4C4;
+    background-color: #ffffff;
+    font-size: 9px;
+    letter-spacing: -0.5px;
+    color: #C4C4C4;
+    float: left;
+    cursor: pointer;
+}
+
+.j2-contents {
+    width: 400px;
+    margin-top: 60px;
+    margin-left: 40px;
+    float: left;
+}
+
+.j2-contents:first-child {
+    margin-left: 0px;
+}
+
+.j2-slide-container {
+    overflow: hidden;
+}
+
+.j2-slide {
+    width: 1200px;
+    transition: all 1s;
+}
+
+.j2-slide-image {
+    width: 400px;
+    height: 250px;
+    float: left;
+}
+
+.j2-slide-remote {
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.j2-slide-button img {
+    width: 14px;
+    height: 14px;
+    margin-top: 4px;
+    float: left;
+}
+
+.j2-slide-title {
+    margin: 0px 5px;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+    float: left;
+}
+
+/* 3. 한옥의 별 설명 */
+
+.j3-background {
+    margin-top: 120px;
+    height: 440px;
+    position: relative;
+}
+
+.j3-backline {
+    width: 100%;
+    height: 370px;
+    background-color: #c0b3a01a;
+    z-index: -1;
+}
+
+.j3-main {
+    width: 1280px;
+    margin: auto;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.j3-image {
+    width: 620px;
+    height: 360px;
+    float: left;
+}
+
+.j3-text {
+    margin-top: 6px;
+    margin-left: 100px;
+    float: left;
+    position: relative;
+}
+
+.j3-textdeco {
+    height: 53px;
+    font-size: 64px;
+    font-weight: bold;
+    color: #4D4D4D;
+}
+
+.j3-ex {
+    margin-top: 8px;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.j3-morebutton {
+    width: 93px;
+    height: 25px;
+    margin-top: 17px;
+    border-radius: 17px;
+    background-color: #c0b3a000;
+    border: 1px solid #C4C4C4;
+    font-size: 9px;
+    letter-spacing: -0.5px;
+    color: #C4C4C4;
+    cursor: pointer;
+}
+
+/* 4. 체험 컨텐츠 */
+
+.j4-background {
+    width: 1280px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.j4-subtitle {
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.j4-contents-box {
+    margin-top: 40px;
+}
+
+.j4-contents {
+    width: 224px;
+    margin-left: 40px;
+    margin-top: 30px;
+    float: left;
+}
+
+.j4-contents:first-child {
+    margin-left: 0px;
+}
+
+.j4-contents:nth-child(6) {
+    margin-left: 0px;
+}
+
+.j4-contents-image {
+    width: 224px;
+    height: 224px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.j4-hoverbox {
+    width: 214px;
+    height: 214px;
+    border-radius: 17px;
+    background-color: #ffffffb3;
+    z-index: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.j4-hoverbox:hover {
+    opacity: 1;
+}
+
+.j4-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #9AC2EC;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.j4-rowLine {
+    width: 16px;
+    height: 1px;
+    background-color: #1F273D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.j4-colLine {
+    width: 1px;
+    height: 16px;
+    background-color: #1F273D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.j4-contents-title {
+    margin-top: 13px;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+    text-align: center;
+}
+
+/* 5. 정보 */
+
+.j5-background {
+    width: 1280px;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 110px;
+}
+
+.j5-title {
+    float: left;
+}
+
+.j5-morebutton {
+    width: 55px;
+    height: 17px;
+    margin-top: 18px;
+    margin-left: 15px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: 1px solid #C4C4C4;
+    font-size: 9px;
+    letter-spacing: -0.5px;
+    color: #C4C4C4;
+    float: left;
+    cursor: pointer;
+}
+
+.j5-infoitem {
+    width: 620px;
+    height: 60px;
+    border-top: 1px solid #C4C4C4;
+    position: relative;
+}
+
+.j5-infoitem:first-child {
+    margin-top: 30px;
+    border-top: none;
+}
+
+.j5-item-title {
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.j5-item-view {
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translate(0, -50%);
+}
+
+.j5-rowLine {
+    width: 100%;
+    height: 1px;
+    background-color: #4D4D4D;
+    position: absolute;
+    top: 4px;
+}
+
+.j5-colLine {
+    width: 1px;
+    height: 100%;
+    background-color: #4D4D4D;
+    position: absolute;
+    left: 4px;
+}
+
+.j5-left {
+    margin-left: 3px;
+    display: none;
+}
+
+.j5-right {
+    margin-left: 3px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+    display: none;
+}
+
+.j5-left1-item {
+    margin-bottom: 13px;
+}
+
+.j5-left1-itemTitle {
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #000000;
+    float: left;
+}
+
+.j5-left1-ex {
+    margin-left: 10px;
+    float: left;
+}
+
+.j5-left1-itemSubtitle {
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.j5-left1-itemEx {
+    font-size: 11px;
+    letter-spacing: -0.5px;
+    color: #6A6A6A;
+}
+
+.j5-left2-title {
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.j5-left2-course {
+    margin: 35px 65px 18px;
+}
+
+.j5-left2-courseLine {
+    position: relative;
+}
+
+.j5-left2-dot {
+    width: 5px;
+    height: 5px;
+    margin-left: 85px;
+    border-radius: 100%;
+    background-color: #1F273D;
+    float: left;
+}
+
+.j5-left2-dot:first-child {
+    margin-left: 18px;
+}
+
+.j5-left2-line {
+    width: 490px;
+    height: 1px;
+    background-color: #C8C8C8;
+    position: absolute;
+    top: 2px;
+    z-index: -1;
+}
+
+.j5-left2-courseName {
+    margin-top: 10px;
+}
+
+.j5-left2-courseName li {
+    width: 40px;
+    margin-left: 50px;
+    font-size: 11px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #4D4D4D;
+    float: left;
+}
+
+.j5-left2-courseName li:first-child{
+    margin-left: 0px;
+}
+
+.j5-left3-title {
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.j5-left3-subTitle {
+    margin-top: 5px;
+    font-size: 11px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.j5-left3-subTitle:nth-child(2) {
+    margin-top: 10px;
+}
+
+.j5-left3-subTitle span {
+    color: #000000;
+}
+
+.j5-right-ad {
+    margin-top: 4px;
+}
+
+.j5-right-ex {
+    margin-top: 12px;
+}
+
+/* 하단 */
+
+footer {
+    border-top: 1px solid #D8D8D8;
+}
+
+.footer {
+    width: 1280px;
+    margin: auto;
+}
+
+.footer h5 {
+    margin-top: 28px;
+}
+
+.footer h5:first-child {
+    margin-top: 50px;
+}
+
+.footer-main {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-menu {
+    margin-top: 4px;
+    padding: 0 16px;
+    float: left;
+    border-left: 1px solid #D8D8D8;
+    font-size: 13px;
+    color: #505050;
+}
+
+.footer-main .footer-menu:first-child {
+    padding-left: 0px;
+    border-left: none;
+}
+
+.capyright {
+    margin-top: 45px;
+    margin-bottom: 25px;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    color: #505050;
+}
+
+/* event */
+
+.opacity1s {
+    opacity: 1;
+    transition: all 1s;
+}
+
+.view {
+    display: block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.fblack {
+    color: #000000;
+}

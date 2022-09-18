@@ -1,0 +1,726 @@
+body {
+    margin: 0px;
+    font-family: 'Noto Sans KR';
+}
+
+div {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 28px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 26px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 18px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+p {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    margin: 0px;
+}
+
+/* 상단 */
+
+.top-background {
+    width: 100%;
+    height: 880px;
+    background-color: #FBFCFF;
+}
+
+/* nav */
+
+.navbar {
+    width: 1280px;
+    height: 70px;
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* 더보기 */
+
+.list-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+}
+
+/* 목차 리스트 */
+
+.main-menu {
+    padding-left: 25px;
+    padding-top: 23px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.menu {
+    width: 75px;
+    margin-left: 25px;
+    float: left;
+    text-align: center;
+}
+
+.sub-menu {
+    padding: 0px;
+}
+
+.menu p {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+.sub-menu a {
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: black;
+    display: none;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+/* 상단 nav 로고 */
+
+.main-logo {
+    width: 64px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* 메인 배경화면 */
+
+.top {
+    width: 1280px;
+    height: 800px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.top-title {
+    position: absolute;
+    top: 127px;
+    left: 277px;
+    color: #1F273D;
+}
+
+.top-image-slide {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    top: 173px;
+    left: 366px;
+    background-color: white;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.top-image-slidebc {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    top: 173px;
+    left: 366px;
+    background-color: white;
+}
+
+.top-slide-background {
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    position: absolute;
+    top: 194px;
+    left: 473px;
+    border: 1px solid black;
+    z-index: -1;
+}
+
+.top-image-list {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 593px;
+    left: 136px;
+}
+
+.top-image-list-item {
+    width: 10px;
+    padding: 0px 5px 2px 0px;
+    float: left;
+    color: #C4C4C4;
+    font-size: 13px;
+    transition: color 0.05s width 0.03s;
+    cursor: pointer;
+}
+
+.top-subtitle {
+    position: absolute;
+    top: 630px;
+    left: 816px;
+    font-size: 32px;
+    color: #4D4D4D;
+    letter-spacing: -0.5px;
+}
+
+/* 1. 연혁 */
+
+.a1-background {
+    width: 1280px;
+    height: 280px;
+    margin: auto;
+    margin-top: 110px;
+}
+
+.a1-title {
+    height: 41px;
+    margin-bottom: 60px;
+}
+
+.a1-title h3 {
+    width: 214px;
+    float: left;
+}
+
+.a1-title p {
+    width: 80px;
+    margin: 0px;
+    margin-top: 20px;
+    font-size: 9px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+    float: left;
+}
+
+.history-item {
+    width: 170px;
+    height: 176px;
+    color: white;
+    float: left;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.history-title {
+    margin-top: 33px;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+}
+
+#item1 {
+    background-color: #000000;
+}
+
+#item2 {
+    background-color: #151515;
+}
+
+#item3 {
+    background-color: #343434;
+}
+
+#item4 {
+    background-color: #545454;
+}
+
+.history-contents {
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    display: none;
+}
+
+.history-contents p {
+    margin-top: 4px;
+}
+
+.a1-more-icon {
+    width: 18px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+/* 2. 설명1 */
+
+.a2-background {
+    height: 620px;
+    margin-top: 150px;
+    position: relative;
+}
+
+.a2-background-line {
+    width: 100%;
+    height: 338px;
+    box-shadow: 2px 2px 15px #0000001a;
+    position: absolute;
+    top: 170px;
+    z-index: -1;
+}
+
+.a2-main {
+    width: 1280px;
+    margin: auto;
+}
+
+.a2-contents {
+    margin-top: 43px;
+    font-size: 14px;
+    color: #4D4D4D;
+    letter-spacing: -0.5px;
+    float: left;
+}
+
+.a2-contents h3 {
+    margin-bottom: 121px;
+    color: #000000;
+}
+
+.a2-contents p {
+    margin-top: 20px;
+}
+
+.un-logo {
+    width: 86px;
+    height: 54px;
+    margin-top: 12px;
+}
+
+.a2-image {
+    width: 540px;
+    height: 620px;
+    float: right;
+}
+
+/* 3. 설명2 */
+
+.a3-background {
+    width: 1280px;
+    height: 380px;
+    margin: auto;
+    margin-top: 110px;
+}
+
+.a3-image {
+    width: 620px;
+    height: 380px;
+    float: left;
+}
+
+.a3-contents {
+    margin-left: 60px;
+    margin-top: 115px;
+    float: left;
+}
+
+.a3-subtitle {
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    color: #3D3D3D;
+}
+
+.a3-text {
+    margin-top: 60px;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    color: #9A9A9A;
+}
+
+/* 4. 마을 문화 */
+
+.a4-background {
+    width: 1280px;
+    margin: auto;
+    margin-top: 120px;
+    position: relative;
+}
+
+.a4-background h3 {
+    margin-bottom: 40px;
+}
+
+.a4-list {
+    width: 620px;
+    height: 224px;
+    box-shadow: 2px 2px 15px #0000001a;
+    border-radius: 20px;
+}
+
+.a4-list-left {
+    width: 284px;
+    height: 167px;
+    margin-top: 26px;
+    margin-left: 27px;
+    float: left;
+}
+
+.a4-title {
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    color: #000000;
+}
+
+.a4-subtitle {
+    margin-top: 11px;
+    font-size: 11px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.a4-listex {
+    margin-top: 18px;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.a4-list-middle {
+    height: 170px;
+    margin-top: 33px;
+    border-left: 1px solid #C4C4C4;
+    float: left;
+}
+
+.a4-list-right {
+    width: 145px;
+    margin-top: 34px;
+    margin-left: 26px;
+    float: left;
+}
+
+.a4-slide-background {
+    overflow: hidden;
+}
+
+.a4-slide-container {
+    width: 1305px;
+    height: 145px;
+    transition: all 1s;
+}
+
+.a4-left-slide {
+    width: 145px;
+    height: 145px;
+    float: left;
+}
+
+.a4-right-slide {
+    width: 145px;
+    height: 145px;
+    float: left;
+}
+
+.a4-slide-list {
+    margin-left: 47px;
+    margin-top: 3px;
+}
+
+.a4-slidebutton {
+    float: left;
+    cursor: pointer;
+}
+
+.a4-slidebutton img {
+    width: 10px;
+    height: 10px;
+    margin-top: 7px;
+}
+
+.a4-slidenum {
+    margin-left: 9px;
+    margin-right: 7px;
+    float: left;
+}
+
+.a4-slidenum span {
+    font-size: 14px;
+    color: #4D4D4D;
+}
+
+.a4-slidenum p {
+    font-size: 7px;
+    letter-spacing: -0.5px;
+    color: #C4C4C4;
+}
+
+.a4-slide-ex {
+    width: 110px;
+    margin-top: 37px;
+    margin-left: 17px;
+    float: left;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+    position: relative;
+}
+
+.a4-left-exp {
+    position: absolute;
+    opacity: 0;
+}
+
+.a4-right-exp {
+    position: absolute;
+    opacity: 0;
+}
+
+.a4-shfdl {
+    width: 620px;
+    height: 300px;
+    margin-top: 40px;
+    border-radius: 19px;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    transition: all 0.3s;
+}
+
+.a4-shfdl h2 {
+    text-align: center;
+    line-height: 290px;
+}
+
+.a4-shfdl-backgroundimg {
+    width: 620px;
+    height: 300px;
+    margin-top: 40px;
+    box-shadow: 2px 2px 15px #0000001a;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.a4-shfdl-ex {
+    margin-top: 40px;
+}
+
+.a4-shfdl-title {
+    margin-top: 38px;
+    font-size: 24px;
+}
+
+.a4-shfdl-sub {
+    margin-top: 58px;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+}
+
+.a4-shfdl-sub:last-child {
+    margin-top: 5px;
+}
+
+/* 5. 띠배너 */
+
+.a5-background {
+    width: 100%;
+    height: 120px;
+    margin-top: 120px;
+    background-color: #F0F7FF;
+}
+
+.a5-background p {
+    padding-top: 29px;
+    font-size: 16px;
+    color: #515F86;
+    text-align: center;
+}
+
+.a5-background h4 {
+    color: #303E62;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 6. 체험 프로그램 */
+
+.a6-background {
+    width: 1280px;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 135px;
+}
+
+.a6-item {
+    width: 400px;
+    margin-top: 30px;
+    margin-right: 40px;
+    float: left;
+}
+
+.a6-item:nth-child(4) {
+    margin-right: 0px;
+}
+
+.a6-item-image {
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.a6-item-title {
+    margin-top: 26px;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    color: #000000;
+    text-align: center;
+}
+
+.a6-item-ex {
+    margin-top: 5px;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    color: #4D4D4D;
+    text-align: center;
+}
+
+.a6-more {
+    width: 70px;
+    height: 20px;
+    margin-top: 24px;
+    margin-left: 165px;
+    background-color: white;
+    border-radius: 10.5px;
+    border: 1px solid #C4C4C4;
+    font-size: 9px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.a6-more p {
+    color: #C4C4C4;
+}
+
+/* 하단 */
+
+footer {
+    border-top: 1px solid #D8D8D8;
+}
+
+.footer {
+    width: 1280px;
+    margin: auto;
+}
+
+.footer h5 {
+    margin-top: 28px;
+}
+
+.footer h5:first-child {
+    margin-top: 50px;
+}
+
+.footer-main {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-menu {
+    margin-top: 4px;
+    padding: 0 16px;
+    float: left;
+    border-left: 1px solid #D8D8D8;
+    font-size: 13px;
+    color: #505050;
+}
+
+.footer-main .footer-menu:first-child {
+    padding-left: 0px;
+    border-left: none;
+}
+
+.capyright {
+    margin-top: 45px;
+    margin-bottom: 25px;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    color: #505050;
+}
+
+/* event */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.view {
+    display: block;
+    transition: all 1s;
+}
+
+.opacity {
+    opacity: 1;
+    transition: all 1s;
+}
+
+.opacity1s {
+    opacity: 1;
+    transition: all 1s;
+}
+
+.this {
+    margin-right: 5px;
+    padding: 0px;
+    width: 80px;
+    color: black;
+    border-bottom: 1px solid black;
+    transition: width 3.5s;
+}
+
+.a1-check {
+    width: 770px;
+    padding-left: 30px;
+    text-align: left;
+    transition: all 0.5s;
+}
+
+.a4-shfdl:hover {
+    opacity: 0;
+    transition: all 0.7s;
+}

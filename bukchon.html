@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하녹리</title>
+    <link href="icon/logo.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="bukchon.css">
+    <!-- font awesome-->
+    <script src="https://kit.fontawesome.com/ede838a40b.js" crossorigin="anonymous"></script>
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--jquary-->
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="list-icon">
+            <img src="icon/list-icon.png" alt="">
+        </div>
+        <ul class="main-menu">
+            <li class="menu">
+                <p>한옥정보</p>
+                <ul class="sub-menu">
+                    <li onclick="window.location.href = 'info.html'">한옥이란</li>
+                </ul>
+            </li>
+            <li class="menu">
+                <p>한옥마을</p>
+                <ul class="sub-menu">
+                    <li onclick="window.location.href = 'bukchon.html'">북촌한옥마을</li>
+                    <li onclick="window.location.href = 'jeonju.html'">전주한옥마을</li>
+                    <li onclick="window.location.href = 'andong.html'">안동하회마을</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="main-logo">
+            <img onclick="window.location.href = 'index.html'" src="icon/main-logo.png" alt="">
+        </div>
+    </nav>
+
+    <!--메인 배경-->
+    <div class="main_background">
+        <div class="main_post">
+            <h4>북촌한옥마을</h4>
+            <p>종로의 북쪽마을<br>
+            도심을 흐르는 청계천과<br>
+            600년 선조의 숨결이 살아숨쉬는 곳</p>
+        </div>
+        <div class="main_photo">
+            <img class="m_ph" id="m_phid_1"  src="img/bukchon/hanok1-1.png" alt="">
+            <img class="m_ph" id="m_phid_2" onscroll="renderb()" src="img/bukchon/hanok2.png" alt="">
+            <img id="m_phid_3"  src="img/bukchon/hanok3.png" alt="">
+        </div>
+    </div>
+
+    <!--LINE-->
+    <div class="line"></div>
+    <div class="top_side">
+        <p class="top_text">북촌 한옥마을은<br></p>
+        <p class="bottom_text">전통한옥이 밀집되어 있는 서울의 대표적인 전통 주거지역입니다.</p>
+    </div>
+    
+    <!--역사(시대별)-->
+    <div class="history">
+        <h4>북촌의 변화</h4>
+        <div class="his_animation">
+            <img src="img/bukchon/Long_Line2.png" alt="">
+            <ul class="circle">
+                <li class="cir checkbk"></li>
+                <li class="cir"></li>
+                <li class="cir"></li>
+                <li class="cir"></li>
+                <li class="cir"></li>
+                <li class="cir"></li>
+            </ul>
+            <ul class="circle_name">
+                <li class="cir_nam checkfbk">조선시대</li>
+                <li class="cir_nam">일제강점기</li>
+                <li class="cir_nam">1970년대</li>
+                <li class="cir_nam">1980년대</li>
+                <li class="cir_nam">1990년대</li>
+                <li class="cir_nam">2000년대</li>
+            </ul>
+
+            <!-- 바뀌는 내용 -->
+            <div class="history_contents view">
+                <div class="his_con_1">
+                    <p class="his-subtitle">조선시대</p>
+                    <h4>세력가들의 주거지</h4>
+                    <img src="img/bukchon/hanok-images.png" alt="">
+                    <p class="his-ex">북촌지역의 가장 큰 특성은 지형과 물길입니다. 북촌의 지형은 남쪽이 낮고 북쪽으로 갈수록 높고 경사가 심해져서, 네 곳의 골짜기가 형성되어 있습니다.<br>
+                    물길은 계곡을 따라 흐르고, 길도 물길과 나란히 형성되어 있습니다. 따라서 길의 형태는 물길을 따라 자연스럽게 남쪽으로 향하고 있으며 이는 오늘날까지도<br>
+                    북촌의 주요 남북가로를 이루고 있는 삼청동길, 가회동길, 계동길, 원서동길 등을 통해 확인할 수 있습니다.</p>
+                    <p class="his-ex">한양의 중심부, 경복궁과 창덕궁 사이에 자리잡고 있고 북악과 응봉을 잇는 산줄기의 남사면에 위치하고 있어 지리적으로 좋은 환경을 갖추고 있는 북촌은<br>
+                    예로부터 권문세가들의 주거지로 자리매김 해왔습니다. 1906년 호적자료에 따르면 북촌 전체인구 10,241(1,932호) 중 호주의 신분에 따른 구분에서 <br>
+                    양반과 관료가 43.6%를 차지하고 있어 권문세가들의 주거지로 양반들의 주택들과 관료들의 집이 중심을 이루는 지역이었음을 알 수 있습니다. </p>
+                </div>
+            </div>
+            <div class="history_contents">
+                <div class="his_con_1">
+                    <p class="his-subtitle">일제강점기</p>
+                    <h4>많은 독립 운동가들의 거주지</h4>
+                    <img src="img/bukchon/hanok-images.png" alt="">
+                    <p class="his-ex">일제강점기 때 도시로의 인구집중 현상은 서울의 주택난을 가중시켰고 이러한 주택난에 따라 민간에 의해 진행되는 구획형 개발이 나타났습니다.<br>
+                        주택의 매매를 통해 이윤을 얻고자 하는 주택경영회사들이 등장하면서 1912년 이후 주택난으로 인해 중대형 필지의 분할을 통해 이전과는 다른 형태의 한옥들이<br>
+                        급속하게 건설되었습니다. 현재 북촌의 대표적 한옥밀집지역인 가회동 31번지, 11번지, 삼청동 35번지 일대 등도 모두 이 때 주택경영회사에 의해 집단적으로<br>
+                        건설된 한옥주거지들로서 대규모로 건설된 후 분양되는 방식으로 공급되었습니다. 이 시기 건설된 한옥들에는 유리와 타일 등 이전에 쓰이지 않던 새로운<br>
+                        재료가 사용되었고 평면이 일정부분 표준화되었으며 가로체계 등과 함께 만들어진다는 점에서 이전의 한옥과는 차이가 있습니다.
+                        </p>
+                    <p class="his-ex">이러한 한옥 주거지는 해방이후 1960년대 초반까지 지속적으로 건설되어 학교 및 공공시설로 남은 몇 개의 대형부지들을 제외하고는 거의 모든 지역이<br>
+                        한옥들로 채워졌습니다.</p>
+                </div>
+            </div>
+            <div class="history_contents">
+                <div class="his_con_1">
+                    <p class="his-subtitle">1970년대</p>
+                    <h4>학교의 이전과 북촌 경관의 변화</h4>
+                    <img src="img/bukchon/hanok-images.png" alt="">
+                    <p class="his-ex">1960년대 후반기부터 1970년대 전반기에 걸쳐서 시행된 영동지구 개발사업을 시작으로 본격적인 강남개발이 이루어짐에 따라 강북지역의 인구가<br>
+                        강남으로 대거 이동하면서 강북지역의 학교들도 강남지역으로 이전하게 되었습니다. 1976년 경기고가 이전하자 그 건물은 정독도서관으로 이용되었고,<br>
+                        1978년 휘문고가 이전하면서 1983년 그 자리에 15층의 현대건설사옥이 신축되었으며, 창덕여고가 1989년 이전한 뒤에는 헌법재판소가 들어섰습니다.<br>
+                        학교가 이전하면서 신축된 대규모 시설들은 북촌 지역의 경관을 크게 바꾸는 중요한 요인으로 작용하게 되었습니다.</p>
+                </div>
+            </div>
+            <div class="history_contents">
+                <div class="his_con_1">
+                    <p class="his-subtitle">1980년대</p>
+                    <h4>경직된 한옥 보존, 북촌길 개선</h4>
+                    <img src="img/bukchon/hanok-images.png" alt="">
+                    <p class="his-ex">학교 이전지 개발에 따른 변화가 확산되면서 한옥의 보존 필요성이 대두되었습니다. 1976년 민속경관지역 지정 논의 이후 1983년 제4종미관지구 지정으로<br>
+                        본격적인 한옥보존정책이 시행되었습니다. 그러나 이 시기의 한옥보존정책은 주민들과의 논의나 합의없이 행정주도로 시행된 것이며, 한옥을 문화재와 같이<br>
+                        엄격하게 규제하는 방식이었고, 또한 북촌로를 확대 포장하면서 많은 한옥들을 철거하는 등 이중적인 행정운영으로 주민들의 불만을 가져왔습니다.</p>
+                </div>
+            </div>
+            <div class="history_contents">
+                <div class="his_con_1">
+                    <p class="his-subtitle">1990년대</p>
+                    <h4>한옥 멸실 및 다세대 건축 확산</h4>
+                    <img src="img/bukchon/hanok-images.png" alt="">
+                    <p class="his-ex">주민들의 계속되는 건축기준 완화 요구에 따라 서울시는 1991년 5월 주택의 경우 1층으로 규제하던 건물높이를 10미터 이하(또는 3층 이하)로 완화하였는데,<br>
+                        이를 계기로 다세대 주택의 신축이 본격적으로 이루어지게 되었습니다. 이후 1994년에는 경복궁 주변의 10미터 고도제한을 16미터로 완화하고 최대 5층까지<br>
+                        건축을 허용하면서 원서동을 비롯한 북촌 전역에서 한옥을 철거한 후 다세대 주택을 건설하는 것이 확산되어 북촌 경관이 급속히 훼손되기 시작하였습니다.</p>
+                </div>
+            </div>
+            <div class="history_contents">
+                <div class="his_con_1">
+                    <p class="his-subtitle">2000년대</p>
+                    <h4>북촌 가꾸기를 위한 새로운 시도</h4>
+                    <img src="img/bukchon/hanok-images.png" alt="">
+                    <p class="his-ex">급속도로 진행되는 한옥 멸실과 다세대주택의 신축 등으로 북촌 경관이 변해가고 주거환경도 악화되어가자 1999년 주민조직인 '(사)종로북촌가꾸기회'의<br>
+                        요구로 서울연구원에서 주민들과 전문가, 서울시와 더불어 새로운 북촌 가꾸기 정책을 수립하였습니다. 북촌의 보전과 관리를 위해 기존의 일방적 규제와는<br>
+                        달리 주민들의 자발적 의사에 기초하는 한옥등록제를 근간으로 하고, 현대적 생활요구를 수용하면서도 한옥 고유의 아름다움이 유지되도록 한옥 수선을<br>
+                        유도하고 지원하며 관리하고자 하였습니다. 또한 주민들의 적극적 참여와 활동으로 마을의 환경을 개선해가고, 거주지로서의 매력을 증진시켜가는 과정을<br>
+                        통해 북촌을 가꾸어 가고자 하는 것으로 2001년부터 본격적으로 시행되어 오늘에 이르고 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MIDDLE-->
+    <div class="full_middle">
+        <div class="all_middle">
+            <div class="middle">
+                <h2><strong>“</strong></h2>
+                <h4>도심 속 거리 박물관</h4>
+                <p style="color: #4D4D4D;">
+                청계천과 종로의 윗동네라는 뜻의 북촌(North Village)은<br>
+                경복궁과 창덕궁 사이에 위치하며,<br>
+                가회동과 송현동, 안국동 그리고 삼청동이 있습니다.</p>
+                <div class="more">
+                    <a href="https://hanok.seoul.go.kr/front/kor/town/town01.do">홈페이지 바로가기</a>
+                </div>
+            </div>
+       </div>
+       <div class="middle_photo">
+        <img src="img/bukchon/street.png" alt="">
+        </div>
+    </div>
+
+
+    <!--북촌 주요 시설-->
+    <div class="main_place">
+        <h4>북촌 주요 시설</h4>
+        <a href="https://hanok.seoul.go.kr/front/kor/exp/expPlaceList.do?searchGubun=P100">더보기</a>
+        <p>북촌한옥마을에 방문하시는 분들을 위한 편의시설 및 안내 공간을 소개합니다.</p>
+        <div class="place_1">
+            <div class="title">
+                <h4>한옥지원센터</h4>
+                <p class="time">
+                평일 09:00 ~ 18:00<br>
+                주말 09:00 ~ 18:00 (일 휴관)</p>
+                <p class="address">종로구 계동 2길 11-7</p>
+                <p class="tel">02-766-4117</p>
+            </div>
+            <div class="title">
+                <h4>북촌마을안내소</h4>
+                <p class="time">평일 09:00 ~ 18:00<br>
+                주말 - </p>
+                <p class="address">종로구 북촌로 5길 48</p>
+                <p class="tel">02-2148-4161</p>
+            </div>
+            <div class="title">
+                <h4>북촌문화센터</h4>
+                <p class="time">평일 09:00 ~ 18:00<br>
+                주말 10:00 ~ 17:00 (일 휴관)</p>
+                <p class="address">종로구 계동길 37</p>
+                <p class="tel">02-2133-1371</p>
+            </div>
+            <div class="title_1">
+                <h4>북촌서재마을</h4>
+                <p class="time">평일 09:00 ~ 18:00<br>
+                주말 09:00 ~ 18:00</p>
+                <p class="address">종로구 계동 2길 11-9</p>
+                <p class="tel">02-765-1373</p>
+            </div>
+        </div>
+        <div class="place_2">
+            <div class="title">
+                <h4>금박공방 금박연</h4>
+                <p class="time">평일 10:00 ~ 17:00<br>
+                주말 09:00 ~ 15:00 (수, 일 휴관)</p>
+                <p class="address">종로구 북촌로 12길 24-12</p>
+                <p class="tel">02-730-2067</p>
+            </div>
+            <div class="title">
+                <h4>동림매듭공방</h4>
+                <p class="time">평일 10:00 ~ 18:00<br>
+                주말 10:00 ~ 18:00 (일, 명절 휴관)</p>
+                <p class="address">종로구 북촌로 12길 10</p>
+                <p class="tel">02-3673-2778</p>
+            </div>
+            <div class="title">
+                <h4>색실문양비누공방</h4>
+                <p class="time">평일 09:00 ~ 17:00<br>
+                주말 09:00 ~ 17:00</p>
+                <p class="address">종로구 북촌로 12길 17</p>
+                <p class="tel">02-733-2577</p>
+            </div>
+            <div class="title_1">
+                <h4>전통발효공방 빚담</h4>
+                <p class="time">평일 11:00 ~ 17:00<br>
+                주말 11:00 ~ 17:00 (월, 화 휴관)</p>
+                <p class="address">종로구 북촌로 12길 5-12</p>
+                <p class="tel">02-766-7858</p>
+            </div>
+        </div>
+    </div>
+
+    <!--주의사항-->
+
+    <div class="all_notice">
+        <div class="notice_title">
+            <h4>한옥마을 방문 시 주의사항</h4>
+            <p>아름다운 관광지 문화를 위해 다음은 꼭 지켜주세요!</p>
+        </div>
+        <ul class="notice_photo">
+            <li class="notice_ph"><img src="img/bukchon/time.png" alt=""></li>
+            <li class="notice_ph"><img src="img/bukchon/camera.png" alt=""></li>
+            <li class="notice_ph"><img src="img/bukchon/bin.png" alt=""></li>
+            <li><img src="img/bukchon/sound.png" alt=""></li>
+        </ul>
+        <div>
+            <div class="notice_contents" id="notice_con_1">
+                <h5>한옥마을은 관광지이기 전에<br>
+                지역 주민들의 거주공간입니다.</h5>
+                <p>아침 저녁 시간을 지켜주세요.<br>
+                (오전 10시 이후 ~ 일몰전)</p>
+            </div>
+            <div class="notice_contents" id="notice_con_2">
+                <h5>사전 양해 없이 개인 공간을<br>
+                몰래 촬영하지 마세요.</h5>
+                <p>열려진 문 틈, 담 넘어 마당<br>
+                촬영 등은 삼가해 주세요.</p>
+            </div>
+            <div class="notice_contents" id="notice_con_3">
+                <h5>가져온 쓰레기는<br>
+                꼭 챙겨가세요.</h5>
+                <p>깨끗하고 아름다운<br>
+                한옥의 인상을 만들어주세요.</p>
+            </div>
+            <div class="notice_contents" id="notice_con_4">
+                <h5>마을 골목길에서는<br>
+                소근소근</h5>
+                <p>확성기나 마이크, 고성으로<br>
+                소음공해는 안돼요.</p>
+            </div>
+        </div>    
+    </div>
+
+    <!--한옥 등록제-->
+    <div class="service">
+        <div class="service_details">
+            <h4>한옥 등록제</h4>
+            <div><a href="https://hanok.seoul.go.kr/front/kor/life/lifeGuide.do?tab=1">자세히</a></div>
+            <p>한옥의 유지 및 관리에 필요한 비용의 일부를 서울시에서 지원함으로써 한옥 거주 주민분들의 생활과 환경 개선에 도움을 드리는 제도입니다. 해외사례의 경우 정부에서 임의로 등록을<br>
+            시행하는 경우가 많지만, 서울시에서는 주민의 자유의사에 따른 한옥등록제도를 도입하여 시행 중입니다.</p>
+            <p>등록 시 한옥 수선 및 신축 공사비 지원, 세금 감면, 거주자 우선 주차장 우선배정 등을 지원해 드리는 제도입니다. </p>
+        </div>
+        <div class="service_photo">
+            <ul class="number">
+                <li class="num">01</li>
+                <li class="num">02</li>
+                <li class="num">03</li>
+                <li>04</li>
+            </ul>
+            <img src="img/bukchon/Long_Line.png" alt="">
+            <ul class="arrow">
+                <li class="arr"><img src="img/bukchon/double_arrow.png" alt=""></li>
+                <li class="arr"><img src="img/bukchon/double_arrow.png" alt=""></li>
+                <li class="arr"><img src="img/bukchon/double_arrow.png" alt=""></li>
+                <li><img src="img/bukchon/double_arrow.png" alt=""></li>
+            </ul>
+            <div class="contents">
+                <div class="con_1">
+                    <h4>신청서 제출</h4>
+                    <p>한옥등록신청서 작성 후 관할 구청에 제출</p>
+                </div>
+                <div class="con_2">
+                    <h4>심의 상정</h4>
+                    <p>관련 서류 확인 및 현장조사 후 <br>
+                    서울시에 한옥등록 심의 요청</p>
+                </div>
+                <div class="con_3">
+                    <h4>서울시 심의</h4>
+                    <p>관련 서류 검토 및 <br>
+                    한옥위원회/건축위훤회의 심의를 통해 등록 결정</p>
+                </div>
+                <div>
+                    <h4>등록 완료</h4>
+                    <p>한옥 등록 필증 교부</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 하단 -->
+    <footer>
+        <div class="footer">
+            <h5>서울특별시</h5>
+            <ul class="footer-main">
+                <li class="footer-menu">04524 서울특별시 중구 세종대로 110 서울시청 11층 균형발전본부 한옥정책과</li> <!-- 13p -->
+                <li class="footer-menu">Tel. 02-2133-5580</li>
+                <li class="footer-menu">Fax. 02-2133-0828</li>
+                <div style="clear: both;"></div>
+            </ul>
+            <h5>전주한옥마을</h5>
+            <ul class="footer-main">
+                <li class="footer-menu">전주시 완산구 기린대로 99 한옥마을 관광안내소</li>
+                <li class="footer-menu">Tel. 063-282-1330</li>
+                <div style="clear: both;"></div>
+            </ul>
+            <h5>안동하회마을</h5>
+            <ul class="footer-main">
+                <li class="footer-menu">경상북도 안동시 풍천면 하회종가길 2-1</li>
+                <li class="footer-menu">Tel. 054)853-0109</li>
+                <li class="footer-menu">Fax. 054)853-4331</li>
+                <div style="clear: both;"></div>
+            </ul>
+            <div class="capyright">
+                <p>이 사이트는 포트폴리오 용도로 제작되었으며, 상업적인 목적이 없음을 밝힙니다.</p> <!-- 12p -->
+                <p>COPYRIGHT ©2022TaeHee.,LTD ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="bukchon.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>하녹리</title>
+    <link href="icon/logo.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="andong.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- 상단 -->
+    <div class="top-background">
+        <!-- nav -->
+        <nav class="navbar">
+            <div class="list-icon">
+                <img src="icon/list-icon.png" alt="">
+            </div>
+            <ul class="main-menu">
+                <li class="menu">
+                    <p>한옥정보</p>
+                    <ul class="sub-menu">
+                        <li onclick="window.location.href = 'info.html'">한옥이란</li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <p>한옥마을</p>
+                    <ul class="sub-menu">
+                        <li onclick="window.location.href = 'bukchon.html'">북촌한옥마을</li>
+                        <li onclick="window.location.href = 'jeonju.html'">전주한옥마을</li>
+                        <li onclick="window.location.href = 'andong.html'">안동하회마을</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="main-logo">
+                <img onclick="window.location.href = 'index.html'" src="icon/main-logo.png" alt="">
+            </div>
+        </nav>
+
+        <!-- 이미지 슬라이드 -->
+        <div class="top">
+            <h2 class="top-title">안동하회마을</h2>
+            <div class="top-image-slidebc"></div>
+            <div class="top-image-slide opacity">
+                <img id="top-slide-image" src="img/andong/a1_slide1.png" alt="">
+            </div>
+            <div class="top-image-slide">
+                <img id="top-slide-image" src="img/andong/a1_slide2.png" alt="">
+            </div>
+            <div class="top-image-slide">
+                <img id="top-slide-image" src="img/andong/a1_slide3.png" alt="">
+            </div>
+            <div class="top-image-slide">
+                <img id="top-slide-image" src="img/andong/a1_slide4.png" alt="">
+            </div>
+            <div class="top-slide-background"></div>
+            <ul class="top-image-list">
+                <li class="top-image-list-item">1</li>
+                <li class="top-image-list-item">2</li>
+                <li class="top-image-list-item">3</li>
+                <li class="top-image-list-item">4</li>
+            </ul>
+            <div style="clear: both;"></div>
+            <p class="top-subtitle">유네스코 지정 세계 유산</p>
+        </div>
+    </div>
+
+    <!-- 1.연혁 -->
+    <div class="a1-background">
+        <div class="a1-title">
+            <h3>하회마을의 역사</h3>
+            <a href="http://www.hahoe.or.kr/coding/sub1/sub4.asp"><p>자세히 보러가기</p></a>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="history">
+            <div class="history-item a1-check" id="item1">
+                <p class="history-title">1500년대</p>
+                <div class="history-contents view">
+                    <p>1572년 서애선생이 풍악서당을 옮겨 병산이라 함</p>
+                    <p>1587년 서애선생 45세 옥연정사 창건</p>
+                </div>
+                <div class="a1-more-icon view">
+                    <img src="icon/andong/more_button.png" alt="">
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+            <div class="history-item" id="item2">
+                <p class="history-title">1600년대</p>
+                <div class="history-contents">
+                    <p>1613년 임진왜란으로 소실된 병산서원 중창</p>
+                </div>
+                <div class="a1-more-icon">
+                    <img src="icon/andong/more_button.png" alt="">
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+            <div class="history-item" id="item3">
+                <p class="history-title">1900년대</p>
+                <div class="history-contents">
+                    <p>1964년 국보제121호 하회탈 및 병산탈 지정</p>
+                    <p>1969년「징비록」국보 132호 (지정일: 1969-11-07)</p>
+                    <p>1984년 국가중요민속자료 제122호로 하회마을 지정</p>
+                </div>
+                <div class="a1-more-icon">
+                    <img src="icon/andong/more_button.png" alt="">
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+            <div class="history-item" id="item4">
+                <p class="history-title">2000년대</p>
+                <div class="history-contents">
+                    <p>2010년 유네스코(UNESCO) 세계유산 등재 - 제34차 세계문화유산위원회(브라질)</p>
+                </div>
+                <div class="a1-more-icon">
+                    <img src="icon/andong/more_button.png" alt="">
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+    <!-- 2. 설명1 -->
+    <div class="a2-background">
+        <div class="a2-background-line"></div>
+        <div class="a2-main">
+            <div class="a2-contents">
+                <h3>한국의 미와 전통이 살아있는 역사마을</h3>
+                <p>유네스코는 등재 결의안에서 ‘한국의 역사마을 ; 하회·양동’은 주거 건축물과 정자, 정사, 서원 등 전통 건축물들의 조화와<br>
+                    그 배치 방법 및 전통적 주거문화가 조선시대의 사회 구조와 독특한 유교적 양반문화를 잘 보여주고 있으며, 이러한 전통이<br>
+                    오랜 세월 동안 온전하게 지속되고 있는 점이 세계유산으로 등재되기에 손색이 없다고평가하였습니다.</p>
+                <p>또한 문집, 예술작품과 조선시대 유학자들의 학술 및 문화적 성과물과 공동체 놀이, 세시풍속 및 전통 관혼상제 등 주민들의<br>
+                    생활과 신앙에 관계된 무형유산이 세대를 이어 전승되고 있는 점도 높이 평가하였습니다.</p>
+                <p>하회마을의 세계유산 등재는 한국인의 전통적인 삶이 그대로 전승되고 있는 생활공간이며, 주민들이 세대를 이어 삶을<br>
+                    영위하고 있는 살아있는 유산(Living Heritage)으로서 자연과 조화를 이루며 살아온 한국인들의 삶 자체를 세계적으로<br>
+                    인정받았다는 점에서 그 의의가 있습니다.</p>
+                <div class="un-logo">
+                    <img src="img/andong/un_logo.png" alt="">
+                </div>
+            </div>
+            <div class="a2-image">
+                <img src="img/andong/a2_image.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. 설명2 -->
+    <div class="a3-background">
+        <div class="a3-image">
+            <img src="img/andong/a3_image.png" alt="">
+        </div>
+        <div class="a3-contents">
+            <h3>낙동강이 S자 모양으로 마을 주변을 휘돌아 간다.</h3>
+            <div class="a3-subtitle">
+                <p>그래서 하회(河回)라 했다.</p>
+                <p>오른편 안동시에서 흘러나와 왼편으로 흘러간다.</p>
+            </div>
+            <p class="a3-text">풍수지리적으로 태극·연화부수·행주형에 일컬어지며 조선시대부터 사람이 살기에<br>
+                가장 좋은 곳으로도 유명하였다. 마을 동쪽의 태백산에서 뻗어 나온 해발 271m의<br>
+                화산이 있고, 이 화산의 줄기가 낮은 구릉지를 형성해 마을의 서쪽 끝까지 뻗어 있으며<br>
+                수령이 600여 년 된 느티나무가 있는 곳이 마을에서 가장 높은 중심부에 해당한다.</p>
+        </div>
+    </div>
+
+    <!-- 4. 마을의 문화 설명 -->
+    <div class="a4-background">
+        <h3>마을의 문화</h3>
+        <div class="a4-list left">
+            <div class="a4-list-left">
+                <p class="a4-title">하회탈</p>
+                <p class="a4-subtitle">국보 제 121호</p>
+                <p class="a4-listex">우리 나라에서 현존하는 가장 오래된 탈로<br>
+                    지금은 총 12개의 탈 중 각시, 중, 양반, 선비,<br>
+                    초랭이, 이매, 부네, 백정, 할미 9개의 탈들만<br>
+                    전해지며 총각, 떡다리, 별채 이 3개 탈들은<br>
+                    분실되었습니다.</p>
+            </div>
+            <div class="a4-list-middle"></div>
+            <div class="a4-list-right">
+                <div class="a4-slide-background">
+                    <div class="a4-slide-container">
+                        <div class="a4-left-slide">
+                            <img src="img/andong/a4_left1.png" alt="">
+                        </div>
+                        <div class="a4-left-slide">
+                            <img src="img/andong/a4_left2.png" alt="">
+                        </div>
+                        <div class="a4-left-slide">
+                            <img src="img/andong/a4_left3.png" alt="">
+                        </div>
+                        <div class="a4-left-slide">
+                            <img src="img/andong/a4_left4.png" alt="">
+                        </div>
+                        <div class="a4-left-slide">
+                            <img src="img/andong/a4_left5.png" alt="">
+                        </div>
+                        <div class="a4-left-slide">
+                            <img src="img/andong/a4_left6.png" alt="">
+                        </div>
+                        <div class="a4-left-slide">
+                            <img src="img/andong/a4_left7.png" alt="">
+                        </div>
+                        <div class="a4-left-slide">
+                            <img src="img/andong/a4_left8.png" alt="">
+                        </div>
+                        <div class="a4-left-slide">
+                            <img src="img/andong/a4_left9.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="a4-slide-list">
+                    <div class="a4-slidebutton" id="a4-leftslide-before">
+                        <img src="icon/andong/left.png" alt="">
+                    </div>
+                    <div class="a4-slidenum">
+                        <p><span class="a4-slidenum-left">1</span>/9</p>
+                    </div>
+                    <div class="a4-slidebutton" id="a4-leftslide-after">
+                        <img src="icon/andong/right.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="a4-slide-ex">
+                <p class="a4-left-exp opacity">양반탈</p>
+                <p class="a4-left-exp">각시탈</p>
+                <p class="a4-left-exp">선비탈</p>
+                <p class="a4-left-exp">부네탈</p>
+                <p class="a4-left-exp">백정탈</p>
+                <p class="a4-left-exp">중탈</p>
+                <p class="a4-left-exp">이매탈</p>
+                <p class="a4-left-exp">할미탈</p>
+                <p class="a4-left-exp">초랭이탈</p>
+            </div>
+        </div>
+        <div class="a4-list right">
+            <div class="a4-list-left">
+                <p class="a4-title">하회별신굿놀이</p>
+                <p class="a4-subtitle">중요 무형문화재 제 69호</p>
+                <p class="a4-listex">약 500년 전부터 10년에 한 번 정월 보름날<br>
+                    또는 특별한 일이 있을 때 서낭신에게 해온<br>
+                    별신굿과 아울러 서낭신을 즐겁게 하기 위한<br>
+                    탈놀이로 서민들 놀이이자 우리나라의 가장<br>
+                    오래된 탈춤입니다.</p>
+            </div>
+            <div class="a4-list-middle"></div>
+            <div class="a4-list-right">
+                <div class="a4-slide-background">
+                    <div class="a4-slide-container">
+                        <div class="a4-right-slide">
+                            <img src="img/andong/a4_right1.png" alt="">
+                        </div>
+                        <div class="a4-right-slide">
+                            <img src="img/andong/a4_right2.png" alt="">
+                        </div>
+                        <div class="a4-right-slide">
+                            <img src="img/andong/a4_right3.png" alt="">
+                        </div>
+                        <div class="a4-right-slide">
+                            <img src="img/andong/a4_right4.png" alt="">
+                        </div>
+                        <div class="a4-right-slide">
+                            <img src="img/andong/a4_right5.png" alt="">
+                        </div>
+                        <div class="a4-right-slide">
+                            <img src="img/andong/a4_right6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="a4-slide-list">
+                    <div class="a4-slidebutton" id="a4-rightslide-before">
+                        <img src="icon/andong/left.png" alt="">
+                    </div>
+                    <div class="a4-slidenum">
+                        <p><span class="a4-slidenum-right">1</span>/6</p>
+                    </div>
+                    <div class="a4-slidebutton" id="a4-rightslide-after">
+                        <img src="icon/andong/right.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="a4-slide-ex">
+                <p class="a4-right-exp opacity">각시, 무동마당</p>
+                <p class="a4-right-exp">주지마당</p>
+                <p class="a4-right-exp">백정마당</p>
+                <p class="a4-right-exp">할미마당</p>
+                <p class="a4-right-exp">파계승마당</p>
+                <p class="a4-right-exp">양반, 선비마당</p>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="a4-shfdl">
+            <h2>낙화야!</h2>
+        </div>
+        <div class="a4-shfdl-backgroundimg">
+            <img src="img/andong/a4_bottom.png" alt="">
+        </div>
+        <div class="a4-shfdl-ex right">
+            <p class="a4-shfdl-title">하회선유줄불놀이</p>
+            <p class="a4-shfdl-sub">해마다 음력 7월 16일의 한여름 밤에 하회의 선비들이 중심이 되어 부용대의 단애(斷崖) 밑을 흐르는<br>
+                강 위에서 선유시회(船遊詩會)를 겸한 불꽃놀이의 축제(祝祭)가 있었는데, 이 축제를 오늘날은<br>
+                속칭 하회줄불놀이라 합니다.</p>
+            <p class="a4-shfdl-sub">이 불꽃놀이는 자연경관으로 높은 단애(斷崖)와 단애 밑을 흐르는 강, 강변의 백사장(白沙場)과<br>
+                소나무들. 이 3가지 요소가 잘 갖추어져야 할뿐만 아니라 문화(文華)가 뒷받침되어야 하므로<br>
+                서민들이 중심이 되었던 별신제의 탈놀이와는 대조를 이루던 행사였으며, 준비의 어려움으로 자주<br>
+                개최할 수는 없었습니다.</p>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <!-- 5. 띠배너 -->
+    <div class="a5-background">
+        <p>하회마을은 인공적으로 조성된 관광지가 아닌 자연마을입니다.</p>
+        <h4>마을 주민에 대한 배려와 이해를 부탁드립니다.</h4>
+    </div>
+
+    <!-- 6. 체험 프로그램 -->
+    <div class="a6-background">
+        <h3>체험 프로그램</h3>
+        <div class="a6-item">
+            <div class="a6-item-image">
+                <img src="img/andong/a6_image1.png" alt="">
+            </div>
+            <p class="a6-item-title">의례 프로그램</p>
+            <p class="a6-item-ex">전통 혼례, 제례(불천위) 전통 상례 시연</p>
+            <div class="a6-more">
+                <p onclick="window.open('http://www.hahoe.or.kr/coding/sub4/sub1_3.asp')">자세히 보기</p>
+            </div>
+        </div>
+        <div class="a6-item">
+            <div class="a6-item-image">
+                <img src="img/andong/a6_image2.png" alt="">
+            </div>
+            <p class="a6-item-title">민속 프로그램</p>
+            <p class="a6-item-ex">세시풍속, 마을 장인 체험, 전통 생활문화 재연</p>
+            <div class="a6-more">
+                <p onclick="window.open('http://www.hahoe.or.kr/coding/sub4/sub2.asp')">자세히 보기</p>
+            </div>
+        </div>
+        <div class="a6-item">
+            <div class="a6-item-image">
+                <img src="img/andong/a6_image3.png" alt="">
+            </div>
+            <p class="a6-item-title">교육 프로그램</p>
+            <p class="a6-item-ex">하회 특강, 서원스테이, 다례 체험 등</p>
+            <div class="a6-more">
+                    <p onclick="window.open('http://www.hahoe.or.kr/coding/sub4/sub3.asp')">자세히 보기</p>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <!-- 하단 -->
+    <footer>
+        <div class="footer">
+            <h5>서울특별시</h5>
+            <ul class="footer-main">
+                <li class="footer-menu">04524 서울특별시 중구 세종대로 110 서울시청 11층 균형발전본부 한옥정책과</li> <!-- 13p -->
+                <li class="footer-menu">Tel. 02-2133-5580</li>
+                <li class="footer-menu">Fax. 02-2133-0828</li>
+                <div style="clear: both;"></div>
+            </ul>
+            <h5>전주한옥마을</h5>
+            <ul class="footer-main">
+                <li class="footer-menu">전주시 완산구 기린대로 99 한옥마을 관광안내소</li>
+                <li class="footer-menu">Tel. 063-282-1330</li>
+                <div style="clear: both;"></div>
+            </ul>
+            <h5>안동하회마을</h5>
+            <ul class="footer-main">
+                <li class="footer-menu">경상북도 안동시 풍천면 하회종가길 2-1</li>
+                <li class="footer-menu">Tel. 054)853-0109</li>
+                <li class="footer-menu">Fax. 054)853-4331</li>
+                <div style="clear: both;"></div>
+            </ul>
+            <div class="capyright">
+                <p>이 사이트는 포트폴리오 용도로 제작되었으며, 상업적인 목적이 없음을 밝힙니다.</p> <!-- 12p -->
+                <p>COPYRIGHT ©2022TaeHee.,LTD ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="andong.js"></script>
+    
+</body>
+</html>
